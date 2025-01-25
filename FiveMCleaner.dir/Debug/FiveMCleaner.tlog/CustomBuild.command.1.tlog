@@ -1,0 +1,10 @@
+^C:\USERS\UTILISATEUR\DESKTOP\CLEANER C++\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Utilisateur/Desktop/cleaner C++" "-BC:/Users/Utilisateur/Desktop/cleaner C++" --check-stamp-file "C:/Users/Utilisateur/Desktop/cleaner C++/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
